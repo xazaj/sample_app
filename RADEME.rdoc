@@ -1,0 +1,2 @@
+# Ruby on Rails 教程：sample application
+这是个例子
