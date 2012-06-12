@@ -3,6 +3,11 @@ require 'spec_helper'
 describe "StaticPages" do
   
   describe "Home Page" do
+    it "should have the base title" do
+      visit '/static_pages/home'
+      page.should have have_selector('title',:text =>"Ruby on Rails Sample App")
+    end
+
     it "should have the content 'sample app'" do
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
       visit '/static_pages/home'

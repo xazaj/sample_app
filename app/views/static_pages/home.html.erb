@@ -1,8 +1,13 @@
 <% provide(:title,'Home') %>
-
+<div class="center hero_unit">
 		<h1>Sample App</h1>
+		<h2>
 		<p>Find me in app/views/static_pages/home.html.erb
 			<A HREF="HTTP://WWW.ZHUAIJUN.CN/">ZHUAIJUN.CN</A>
-			sample app
 		</p>
+		</h2>
+	<%= link_to "Sigh up now!", '#',class:"btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png",alt:"rails"), 'http://rubyonrails.org/' %>
 
